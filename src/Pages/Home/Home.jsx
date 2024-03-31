@@ -1,13 +1,14 @@
 import React from 'react'
-import Layout from '../../Layout/Layout/Layout'
+import HeadLine from '../../Components/HeadLine/HeadLine'
+
 
 const Home = () => {
   return (
-    <>
-        <Layout>
-            
-        </Layout>
-    </>
+    <div>
+       <HeadLine/>
+       
+         
+    </div>
   )
 }
 

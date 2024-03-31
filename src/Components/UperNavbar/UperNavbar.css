@@ -1,0 +1,13 @@
+.uper-nav-btn {
+  border: 0;
+  padding: 10px 20px;
+  
+  color: #fff;
+}
+.left-uper-nav a,
+.right-uper-nav a {
+  color: grey;
+}
+.right-uper-nav div{
+  border-color: grey !important;
+}

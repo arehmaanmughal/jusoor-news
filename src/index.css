@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+.bg-blue {
+  background-color: rgb(50, 136, 241);
+}
+.text-blue {
+  color: rgb(50, 136, 241);
+}
+p {
+  text-align: right;
+}

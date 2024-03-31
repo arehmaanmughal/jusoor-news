@@ -1,0 +1,28 @@
+.lower-navbar {
+  background-color: #000;
+  padding: 20px 0;
+}
+.left-lower-nav .search-btn {
+  color: #fff;
+  font-size: 20px;
+}
+.left-lower-nav {
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+.left-lower-nav input {
+  color: #fff;
+  background-color: #000;
+  border: 0;
+  outline: 0;
+}
+.middle-lower-nav a {
+  color: #fff;
+}
+.right-lower-nav .toggle-btn {
+  color: #fff;
+  font-size: 30px;
+}
+.offcanvas-links a{
+  color: #000;
+}
