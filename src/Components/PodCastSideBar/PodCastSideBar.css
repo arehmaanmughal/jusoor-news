@@ -1,0 +1,54 @@
+.podcast-sidebar-main{
+    background: #F5F6FA;
+    padding: 15px 5px;
+    padding-left: 15px;
+}
+
+.podcast-sidebar h1{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 34.5px;
+    text-align: right;
+    color: #000;
+}
+.podcast-sidebar-main .title{
+    
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: right;
+    color: #1D1D1D;
+    margin-bottom: 0;
+}
+.podcast-sidebar-main .descr{
+    color : #615959;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: right;
+    
+}
+.podcast-sidebar-main .date{
+
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: right;
+    color : #615959;
+}
+.podcast-sidebar-main .calender-icon{
+    font-size: 20px;
+    color : #615959;
+}
+
+.podcast-sidebar-main .audio-section{
+    background: #4095C61F;
+
+}
+.podcast-sidebar-main .audio-play{
+    background-color: #fff;
+    padding: 2px 5px;
+}
+.podcast-sidebar-main .play-btn{
+    font-size: 30px;
+}

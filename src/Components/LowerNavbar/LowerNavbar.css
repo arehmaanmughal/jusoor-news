@@ -5,16 +5,26 @@
 .left-lower-nav .search-btn {
   color: #fff;
   font-size: 20px;
+
+
 }
 .left-lower-nav {
   border-bottom: 1px solid grey;
   padding-bottom: 5px;
 }
 .left-lower-nav input {
-  color: #fff;
-  background-color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  background: transparent;
   border: 0;
   outline: 0;
+  color: #fff;
+  width: 100%;
+}
+.left-lower-nav input::placeholder {
+    color: #fff;
 }
 .middle-lower-nav a {
   color: #fff;

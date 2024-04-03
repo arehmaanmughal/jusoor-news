@@ -1,0 +1,79 @@
+.podcast-hero{
+    background-image: url("../../assets/Rectangle 43.png");
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.podcast-hero-content{
+    width: 715px;
+    height: 257px;
+    
+
+}
+.podcast-hero-content .content{
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+.podcast-hero-content .date{
+    border-right: 2px solid #4095C6;
+    padding-right: 20px;
+}
+.podcast-hero-content span{
+
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: right;
+    
+}
+.podcast-hero-content h1{
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: right;
+    color: #fff;
+}
+.podcast-hero-content p{
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: right;
+    color: #fff;
+        
+}
+.podcast-hero-btns .btn-2{
+    
+    width: 200px;
+    height: 62px;
+    border: 0;
+    background: #1D1D1D;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    
+    
+
+
+}
+.podcast-hero-btns .btn-1{
+    
+    width: 107px;
+    height: 62px;
+    border: 0;
+    color: #fff;
+    background: transparent;
+    font-size: 23px;
+    font-weight: 600; 
+    
+}
+.podcast-hero-btns span{
+    font-size: 36px;
+}

@@ -13,10 +13,10 @@ const UperNavbar = () => {
     <div className="uper-navbar">
       <Container>
         <nav className="d-flex justify-content-between align-items-center">
-          <div className="left-uper-nav d-flex align-items-center gap-2 ">
-            <button className="uper-nav-btn bg-blue">Login</button>
+          <div className="left-uper-nav d-flex align-items-center gap-3 ">
+            <button className="uper-nav-btn bg-blue">الجمعة 15 أبريل</button>
             <Link>
-              <span className="text-blue"><FaFacebookF /></span>
+              <FaFacebookF />
             </Link>
             <Link>
               <FaXTwitter />
@@ -34,15 +34,15 @@ const UperNavbar = () => {
               <FaTiktok />
             </Link>
           </div>
-          <div className="right-uper-nav d-none d-md-flex gap-2 ">
-            <div className="d-flex gap-3 pe-3 border-end">
-              <Link>Link1</Link>
-              <Link>Link2</Link>
-              <Link>Link3</Link>
-              <Link>Link4</Link>
+          <div className="right-uper-nav d-none d-md-flex gap-3 ">
+            <div className="d-flex gap-4 pe-3 border-end">
+              <Link>معلومات عنا</Link>
+              <Link>اتصل بنا</Link>
+              <Link>المنتديات</Link>
+              <Link>مدونة</Link>
             </div>
 
-            <Link>Link5</Link>
+            <Link className=""><img src="/Home/image1.png"></img>  دبي <span>28.5°</span></Link>
           </div>
         </nav>
       </Container>

@@ -4,6 +4,7 @@ import { Container, Offcanvas } from "react-bootstrap";
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
+import logo from "../../../public/Home/logo.png";
 const LowerNavbar = () => {
   const [show, setShow] = useState(false);
 
@@ -21,20 +22,20 @@ const LowerNavbar = () => {
               <span className="search-btn" onClick={handleSearch}>
                 <CiSearch />
               </span>
-              <input type="text" placeholder="Search" />
+              <input type="text" placeholder="أخبار البحث" />
             </div>
           </div>
           <div className="middle-lower-nav d-none d-lg-flex  gap-4">
-            <Link to={"/"}>Home</Link>
-            <Link to={"/contactUs/"}>Contact Us</Link>
-            <Link to={"/podCast/"}>Pod Cast</Link>
-            <Link to={"/Post/"}>Posts</Link>
-            <Link to={"/News/"}>News</Link>
-            <Link to={"/PrivacyPolicy/"}>Privacy Policy</Link>
+            <Link to={"/"}>بودكاست</Link>
+            <Link to={"/contactUs/"}>جسور TV</Link>
+            <Link to={"/podCast/"}>فنون</Link>
+            <Link to={"/Post/"}>جيبَك</Link>
+            <Link to={"/News/"}>نبض المجتمع</Link>
+            <Link to={"/PrivacyPolicy/"}>سياسة</Link>
           </div>
           <div className="right-lower-nav d-flex align-items-center gap-2">
             <Link className="">
-              <img src={""}></img>Logo
+              <img src={logo}></img>
             </Link>
             <span className="toggle-btn d-lg-none" onClick={handleShow}>
               <IoIosMenu />

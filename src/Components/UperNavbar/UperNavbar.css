@@ -1,13 +1,27 @@
 .uper-nav-btn {
   border: 0;
-  padding: 10px 20px;
-  
+  padding: 15px 30px;
+  font-size: 13px;
   color: #fff;
+  
+
+
 }
-.left-uper-nav a,
+.left-uper-nav a
+{
+  color: #3E3939;
+  font-size: 20px;
+}
+.left-uper-nav a:hover
+{
+  color: #4095C6;
+  
+}
+
 .right-uper-nav a {
-  color: grey;
+  color: #3E3939;
+  font-size: 16px;
 }
 .right-uper-nav div{
-  border-color: grey !important;
+  border-color: #3E3939 !important;
 }

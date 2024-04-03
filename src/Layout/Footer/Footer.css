@@ -9,31 +9,39 @@
   /* max-width: 50%; */
 }
 .left-footer p {
-  font-weight: 500;
-  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28.5px;
   text-align: right;
+  color: #fff;
 }
 .left-footer span {
-  color: grey;
+  color: #fff;
 }
 .left-footer input {
   background: transparent;
   border: 0;
   outline: 0;
-  color: grey;
+  color: #fff;
   text-align: right;
   width: 100%;
 }
+.left-footer input::placeholder {
+  color: #fff;
+}
 .left-footer .border-bottom {
-  border-bottom: 1px solid grey !important;
+  border-bottom: 1px solid #D9D9D9 !important;
 }
 .right-footer p {
-  line-height: 10px;
-  color: grey;
+  
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 27px;
   text-align: right;
+  color: #fff;
 }
 .right-footer a {
-  color: grey;
+  color: #E8E8E8;
   text-align: right;
 }
 .right-footer .logo {
