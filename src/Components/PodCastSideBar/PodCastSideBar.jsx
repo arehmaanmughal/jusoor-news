@@ -2,6 +2,7 @@ import React from "react";
 import "./PodCastSideBar.css";
 import { CgCalendarDates } from "react-icons/cg";
 import { FaCirclePlay } from "react-icons/fa6";
+import card_img from "../../assets/Rectangle 19.png";
 const PodCastSideBar = () => {
   const news = [
     {
@@ -9,7 +10,7 @@ const PodCastSideBar = () => {
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
-      img_url: "../../../public/PodCast/Rectangle 19.png",
+      img_url: card_img,
       audio_url: "",
     },
     {
@@ -17,7 +18,7 @@ const PodCastSideBar = () => {
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
-      img_url: "../../../public/PodCast/Rectangle 19.png",
+      img_url: card_img,
       audio_url: "",
     },
     {
@@ -25,7 +26,7 @@ const PodCastSideBar = () => {
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
-      img_url: "../../../public/PodCast/Rectangle 19.png",
+      img_url: card_img,
       audio_url: "",
     },
     {
@@ -33,7 +34,7 @@ const PodCastSideBar = () => {
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
-      img_url: "../../../public/PodCast/Rectangle 19.png",
+      img_url: card_img,
       audio_url: "",
     },
   ];
