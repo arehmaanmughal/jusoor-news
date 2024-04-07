@@ -10,42 +10,40 @@ const AudioPlayer = ({ audioUrl }) => {
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
-    const wavesurfer = WaveSurfer.create({
-      container: containerRef.current,
-      waveColor: "#4095C6",
-      progressColor: "#000",
-      cursorWidth: 1,
-      barWidth: 3,
-      barRadius: 3,
-      height: 20,
-      responsive: true,
-    });
+    const wavesurfer = WaveSurfer.create(
+      {
+        container: containerRef.current,
+        waveColor: "#4095C6",
+        progressColor: "#000",
+        cursorWidth: 0,
+        barWidth: 3,
+        barHeight: 3,
+        barRadius: 3,
+        height: 20,
+        responsive: true,
+      },
+      []
+    );
 
     waveSurferRef.current = wavesurfer;
 
-    
     wavesurfer.load(audioUrl);
 
-    
     wavesurfer.on("ready", () => {
-      
       if (isPlaying) {
         wavesurfer.play();
       }
     });
 
     wavesurfer.on("audioprocess", () => {
-      
       setCurrentTime(wavesurfer.getCurrentTime());
     });
 
     wavesurfer.on("finish", () => {
-      
       setIsPlaying(false);
       setCurrentTime(0);
     });
 
-   
     return () => {
       wavesurfer.destroy();
     };
@@ -54,13 +52,11 @@ const AudioPlayer = ({ audioUrl }) => {
   const togglePlay = () => {
     if (waveSurferRef.current) {
       if (!isPlaying) {
-        
         waveSurferRef.current.play();
       } else {
-        
         waveSurferRef.current.pause();
       }
-      
+
       setIsPlaying(!isPlaying);
     }
   };

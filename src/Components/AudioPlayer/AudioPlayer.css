@@ -13,8 +13,12 @@
   align-items: center;
   gap: 10px;
   background-color: #fff;
-  padding: 2px 5px;
+  /* padding: 2px 5px; */
   width: 85%;
+}
+.audio-info span {
+  color: #615959;
+  font-size: 12px;
 }
 .play-btn {
   font-size: 30px;

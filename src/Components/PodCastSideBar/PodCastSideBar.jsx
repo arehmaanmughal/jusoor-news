@@ -71,11 +71,12 @@ const PodCastSideBar = () => {
                     </span>
                   </p>
                 </Link>
-                <div className="col-12 col-lg-4">
+                <Link to={`/podcast/${current_news.id}`}
+                  onClick={handleClick} className="col-12 col-lg-4">
                   <div className="d-flex justify-content-end">
                     <img className="news-img" src={current_news.img_url} />
                   </div>
-                </div>
+                </Link>
               </div>
 
               <AudioPlayer audioUrl={current_news.audio_url} />
