@@ -3,9 +3,11 @@ import "./SidePodCasts.css";
 import { CgCalendarDates } from "react-icons/cg";
 import { FaCirclePlay } from "react-icons/fa6";
 import card_img from "../../assets/Rectangle 19.png"
+import { Link } from "react-router-dom";
 const SidePodCasts = () => {
   const podcasts = [
     {
+      id : 9,
       imgurl: card_img,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات.",
       descr:
@@ -14,6 +16,7 @@ const SidePodCasts = () => {
       audiourl: "",
     },
     {
+      id : 10,
       imgurl: card_img,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات.",
       descr:
@@ -22,6 +25,7 @@ const SidePodCasts = () => {
       audiourl: "",
     },
     {
+      id : 11,
       imgurl: card_img,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات.",
       descr:
@@ -30,6 +34,7 @@ const SidePodCasts = () => {
       audiourl: "",
     },
     {
+      id : 12,
       imgurl: card_img,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات.",
       descr:
@@ -38,6 +43,9 @@ const SidePodCasts = () => {
       audiourl: "",
     },
   ];
+  const handleClick = () => {
+    window.scrollTo(0, 0); // Scroll to top of the page
+  };
   return (
     <div className="side-podcasts">
       <h1>منشور مشهور</h1>
@@ -45,7 +53,7 @@ const SidePodCasts = () => {
       <div className="row gy-3 gx-3">
         {podcasts.map((podcast) => (
           <div className="col-sm-12">
-            <div class="card border-0">
+            <Link to={`/podcast/${podcast.id}`} class="card border-0" onClick={handleClick}>
               <img src={podcast.imgurl} class="podcast-img" alt="..." />
               <div class="card-body">
                 <h5 class="title">{podcast.title}</h5>
@@ -57,7 +65,7 @@ const SidePodCasts = () => {
                   </span>
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

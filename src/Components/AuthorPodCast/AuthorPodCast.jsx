@@ -2,9 +2,11 @@ import React from "react";
 import "./AuthorPodCast.css";
 import { CgCalendarDates } from "react-icons/cg";
 import { FaCirclePlay } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const AuthorPodCast = () => {
   const podcasts = [
     {
+      id: 5,
       imgurl: "/PodCast/Rectangle 31.png",
       title: "التأمل الفني: مشاركة اللحظات في المعرض",
       descr:
@@ -13,6 +15,7 @@ const AuthorPodCast = () => {
       audiourl: "",
     },
     {
+      id: 6,
       imgurl: "/PodCast/Rectangle 31.png",
       title: "التأمل الفني: مشاركة اللحظات في المعرض",
       descr:
@@ -21,6 +24,7 @@ const AuthorPodCast = () => {
       audiourl: "",
     },
     {
+      id: 7,
       imgurl: "/PodCast/Rectangle 31.png",
       title: "التأمل الفني: مشاركة اللحظات في المعرض",
       descr:
@@ -29,6 +33,7 @@ const AuthorPodCast = () => {
       audiourl: "",
     },
     {
+      id: 8,
       imgurl: "/PodCast/Rectangle 31.png",
       title: "التأمل الفني: مشاركة اللحظات في المعرض",
       descr:
@@ -37,13 +42,16 @@ const AuthorPodCast = () => {
       audiourl: "",
     },
   ];
+  const handleClick = () => {
+    window.scrollTo(0, 0); 
+  };
   return (
     <div className="author-podcast">
       <h1>اسم التصنيف</h1>
       <div className="row gy-3 gx-3">
         {podcasts.map((podcast) => (
           <div className="col-sm-6">
-            <div class="card border-0">
+            <Link to={`/podcast/${podcast.id}`} class="card border-0" onClick={handleClick}>
               <img src={podcast.imgurl} class="podcast-img" alt="..." />
               <div class="card-body">
                 <h5 class="title">{podcast.title}</h5>
@@ -55,17 +63,17 @@ const AuthorPodCast = () => {
                   </span>
                 </p>
                 <div className="audio-section ">
-                <div className="audio-play">
-                  <span className="audio-time">10:23</span>
-                </div>
-                <div className="">
-                  <span className="play-btn text-blue">
-                    <FaCirclePlay />
-                  </span>
+                  <div className="audio-play">
+                    <span className="audio-time">10:23</span>
+                  </div>
+                  <div className="">
+                    <span className="play-btn text-blue">
+                      <FaCirclePlay />
+                    </span>
+                  </div>
                 </div>
               </div>
-              </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

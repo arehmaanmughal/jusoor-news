@@ -1,53 +1,67 @@
 import React from "react";
 import "./PodCastSideBar.css";
 import { CgCalendarDates } from "react-icons/cg";
-import { FaCirclePlay } from "react-icons/fa6";
 import card_img from "../../assets/Rectangle 19.png";
+import { Link } from "react-router-dom";
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
+import audio from "../../assets/voice.mp3";
+
 const PodCastSideBar = () => {
   const news = [
     {
+      id: 1,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات",
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
       img_url: card_img,
-      audio_url: "",
+      audio_url: audio,
     },
     {
+      id: 2,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات",
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
       img_url: card_img,
-      audio_url: "",
+      audio_url: audio,
     },
     {
+      id: 3,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات",
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
       img_url: card_img,
-      audio_url: "",
+      audio_url: audio,
     },
     {
+      id: 4,
       title: "أصوات مرفوعة: نسيج من الاحتجاجات",
       descr:
         "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
       date: "14 أبريل 2024",
       img_url: card_img,
-      audio_url: "",
+      audio_url: audio,
     },
   ];
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="podcast-sidebar">
       <h1>الشائع</h1>
       <hr />
       <div className="row gy-3 gx-3">
         {news.map((current_news, index) => (
-          <div className="col-sm-6 col-lg-12  " key={index}>
+          <div className="col-sm-6 col-lg-12  " key={current_news.id}>
             <div className="podcast-sidebar-main">
               <div className="row ">
-                <div className="col-12 order-1 col-lg-8 order-lg-0">
+                <Link
+                  to={`/podcast/${current_news.id}`}
+                  onClick={handleClick}
+                  className="col-12 order-1 col-lg-8 order-lg-0"
+                >
                   <p className="title">{current_news.title}</p>
                   <p className="descr">{current_news.descr}</p>
                   <p className="date">
@@ -56,7 +70,7 @@ const PodCastSideBar = () => {
                       <CgCalendarDates />
                     </span>
                   </p>
-                </div>
+                </Link>
                 <div className="col-12 col-lg-4">
                   <div className="d-flex justify-content-end">
                     <img className="news-img" src={current_news.img_url} />
@@ -64,16 +78,7 @@ const PodCastSideBar = () => {
                 </div>
               </div>
 
-              <div className="audio-section ">
-                <div className="audio-play">
-                  <span className="audio-time">10:23</span>
-                </div>
-                <div className="">
-                  <span className="play-btn text-blue">
-                    <FaCirclePlay />
-                  </span>
-                </div>
-              </div>
+              <AudioPlayer audioUrl={current_news.audio_url} />
             </div>
           </div>
         ))}
