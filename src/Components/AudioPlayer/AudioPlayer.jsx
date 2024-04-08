@@ -16,7 +16,7 @@ const AudioPlayer = ({ audioUrl }) => {
         waveColor: "#4095C6",
         progressColor: "#000",
         cursorWidth: 0,
-        barWidth: 3,
+        barWidth: 2,
         barHeight: 3,
         barRadius: 3,
         height: 20,

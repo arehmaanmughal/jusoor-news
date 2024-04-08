@@ -17,7 +17,7 @@ import { useParams } from "react-router-dom";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 const SinglePodCast = () => {
   const params = useParams();
-  const podcasts = [
+  const posts = [
     {
       id: 1,
       header_imgurl: header_img,
@@ -242,52 +242,54 @@ const SinglePodCast = () => {
   ];
 
   return (
-    <div className="single-podcast">
-      {podcasts
-        .filter((newpodcasts) => newpodcasts.id == params.id)
-        .map((podcast) => (
-          <div className="card rounded-0" key={podcast.id}>
-            <img
-              src={podcast.header_imgurl}
-              className="podcast-img"
-              alt="..."
-            />
+    <div className="single-post">
+      {posts
+        .filter((newpost) => newpost.id == params.id)
+        .map((post) => (
+          <div className="card rounded-0" key={post.id}>
+            <img src={post.header_imgurl} className="post-img" alt="..." />
             <div className="card-body">
-              <div className="podcast-info">
-                <p className="date">
-                  {podcast.date}
+              <div className="post-info">
+                <p className="post-date">
+                  {post.date}
                   <span className="calender-icon">
                     <CgCalendarDates />
                   </span>
                 </p>
-                <p className="date">
-                  {podcast.views}
-                  <span className="calender-icon">
+                <p className="post-views">
+                  {post.views}
+                  <span className="views-icon">
                     <LuEye />
                   </span>
                 </p>
-                <p className="date">
-                  {podcast.category}
-                  <span className="calender-icon">
+                <p className="post-category">
+                  {post.category}
+                  <span className="category-icon">
                     <BiCategory />
                   </span>
                 </p>
               </div>
-              <h5 className="title">{podcast.title}</h5>
-              <p className="descr">{podcast.descr}</p>
+              <h5 className="title">{post.title}</h5>
+              <p className="descr">{post.descr}</p>
               <div className="w-100">
-                <VideoPlayer src={podcast.video_url} />
+                <VideoPlayer src={post.video_url} />
               </div>
-              <p className="sub-descr">{podcast.sub_descr}</p>
+              <p className="sub-descr">{post.sub_descr}</p>
               <div className="row gy-3 gx-3">
                 <div className="col-md-6">
-                  <img className="descr-img" src={podcast.descr_imgurl_a} />
+                  <img className="descr-img" src={post.descr_imgurl_a} />
                 </div>
                 <div className="col-md-6">
-                  <img className="descr-img" src={podcast.descr_imgurl_b} />
+                  <img className="descr-img" src={post.descr_imgurl_b} />
                 </div>
               </div>
-              <p className="last-descr">{podcast.last_descr}</p>
+              <p className="last-descr">{post.last_descr}</p>
+              <div className="tags">
+                <button>حاضِر</button>
+                <button>سياسة</button>
+                <button>عرب</button>
+                <p>: العلامات</p>
+              </div>
             </div>
           </div>
         ))}

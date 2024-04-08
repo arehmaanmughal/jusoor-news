@@ -7,10 +7,10 @@ const PodCasts = () => {
     <div className="podcasts">
       <div className="container">
         <div className="row gx-3 gy-3">
-          <div className="col-lg-4 order-1 order-lg-0">
+          <div className="col-xl-4 order-1 order-xl-0">
             <PodCastSideBar />
           </div>
-          <div className="col-lg-8">
+          <div className="col-xl-8">
             <AuthorPodCast />
           </div>
         </div>

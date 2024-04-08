@@ -1,7 +1,7 @@
 import React from "react";
 import "./SidePodCasts.css";
 import { CgCalendarDates } from "react-icons/cg";
-import { FaCirclePlay } from "react-icons/fa6";
+import banner_img from "../../assets/image 6.png";
 import card_img from "../../assets/Rectangle 19.png"
 import { Link } from "react-router-dom";
 const SidePodCasts = () => {
@@ -52,10 +52,10 @@ const SidePodCasts = () => {
       <hr />
       <div className="row gy-3 gx-3">
         {podcasts.map((podcast) => (
-          <div className="col-sm-12">
+          <div className="col-sm-6 col-lg-12">
             <Link to={`/podcast/${podcast.id}`} class="card border-0" onClick={handleClick}>
               <img src={podcast.imgurl} class="podcast-img" alt="..." />
-              <div class="card-body">
+              <div class="card-body px-0">
                 <h5 class="title">{podcast.title}</h5>
                 <p class="descr">{podcast.descr}</p>
                 <p class="date">
@@ -69,6 +69,11 @@ const SidePodCasts = () => {
           </div>
         ))}
       </div>
+      
+        <div className="">
+        <img src={banner_img} className="side-banner-img"/>
+        </div>
+      
     </div>
   );
 };

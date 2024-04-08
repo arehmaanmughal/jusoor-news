@@ -13,7 +13,7 @@
 .side-podcasts .title{
     
     
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 26px;
     text-align: right;
@@ -44,4 +44,40 @@
 .side-podcasts .calender-icon{
     font-size: 30px;
     color : #615959;
+}
+.side-podcasts .side-banner-img{
+    width: 100%;
+    
+}
+@media  screen and (max-width : 576px) {
+
+    .side-podcasts .title{
+    
+    
+    font-size: 20px;
+    
+    line-height: 26px;
+    
+}
+.side-podcasts .descr{
+    
+    font-size: 16px;
+   
+    line-height: 22px;
+    
+
+    
+}
+.side-podcasts .date{
+
+    font-size: 16px;
+   
+    line-height: 22px;
+    
+}
+
+.side-podcasts .calender-icon{
+    font-size: 30px;
+    
+}
 }

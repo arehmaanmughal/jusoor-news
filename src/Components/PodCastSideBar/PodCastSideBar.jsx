@@ -44,6 +44,26 @@ const PodCastSideBar = () => {
       img_url: card_img,
       audio_url: audio,
     },
+    {
+      id: 4,
+      title: "أصوات مرفوعة: نسيج من الاحتجاجات",
+      descr:
+        "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
+      date: "14 أبريل 2024",
+      img_url: card_img,
+      audio_url: audio,
+    },
+    {
+      id: 4,
+      title: "أصوات مرفوعة: نسيج من الاحتجاجات",
+      descr:
+        "يتجمع حشد متنوع، توحدهم قضية مشتركة، وعلاماتهم الفردية تنسج معًا سردًا أكبر للدعوة والتغيير",
+      date: "14 أبريل 2024",
+      img_url: card_img,
+      audio_url: audio,
+    }
+    
+    
   ];
   const handleClick = () => {
     window.scrollTo(0, 0);
@@ -53,14 +73,14 @@ const PodCastSideBar = () => {
       <h1>الشائع</h1>
       <hr />
       <div className="row gy-3 gx-3">
-        {news.map((current_news, index) => (
-          <div className="col-sm-6 col-lg-12  " key={current_news.id}>
+        {news.map((current_news) => (
+          <div className="col-md-6 col-xl-12  " key={current_news.id}>
             <div className="podcast-sidebar-main">
               <div className="row ">
                 <Link
                   to={`/podcast/${current_news.id}`}
                   onClick={handleClick}
-                  className="col-12 order-1 col-lg-8 order-lg-0"
+                  className="col-12 order-1 col-xl-8 order-xl-0"
                 >
                   <p className="title">{current_news.title}</p>
                   <p className="descr">{current_news.descr}</p>
@@ -72,7 +92,7 @@ const PodCastSideBar = () => {
                   </p>
                 </Link>
                 <Link to={`/podcast/${current_news.id}`}
-                  onClick={handleClick} className="col-12 col-lg-4">
+                  onClick={handleClick} className="col-12 col-xl-4">
                   <div className="d-flex justify-content-end">
                     <img className="news-img" src={current_news.img_url} />
                   </div>

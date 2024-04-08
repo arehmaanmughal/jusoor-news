@@ -1,7 +1,7 @@
 .podcast-sidebar-main{
     background: #F5F6FA;
-    padding: 15px 5px;
-    padding-left: 15px;
+    padding: 15px 10px;
+    
 }
 
 .podcast-sidebar h1{
@@ -12,7 +12,8 @@
     color: #000;
 }
 .podcast-sidebar-main .news-img{
-    width: 116px;
+    width: 100%;
+    height: 90px;
 }
 .podcast-sidebar-main .title{
     
@@ -43,33 +44,17 @@
     gap: 5px;
 }
 .podcast-sidebar-main .calender-icon{
-    font-size: 30px;
+    font-size: 20px;
     color : #615959;
 }
 
-.podcast-sidebar-main .audio-section{
-    background: #4095C61F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 5px;
-}
-.podcast-sidebar-main .audio-play{
-    background-color: #fff;
-    padding: 2px 5px;
-    width: 85%;
-}
-.podcast-sidebar-main .play-btn{
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-}
+
 
 @media screen and (max-width : 576px) {
     .podcast-sidebar-main .news-img{
         margin-bottom: 10px;
         width: 100%;
-        /* height: 50%; */
+        height: auto;
 
     }
     .podcast-sidebar-main{
@@ -83,6 +68,7 @@
     .podcast-sidebar-main .news-img{
         margin-bottom: 10px;
         width: 100%;
+        height: auto;
     }
     .podcast-sidebar-main{
        
@@ -93,6 +79,7 @@
     .podcast-sidebar-main .news-img{
         margin-bottom: 10px;
         width: 100%;
+        height: auto;
     }
     .podcast-sidebar-main{
        
@@ -101,7 +88,9 @@
 }
 @media (min-width : 992px) and (max-width : 1200px) {
     .podcast-sidebar-main .news-img{
-        width: 95px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
     }
     .podcast-sidebar-main .title{
         font-size: 12px;  
@@ -115,13 +104,14 @@
         font-size: 11px;  
     }
     .podcast-sidebar-main .calender-icon{
-        font-size: 25px;
+        font-size: 20px;
         
     }
 }
 @media (min-width : 1200px) and (max-width : 1400px) {
     .podcast-sidebar-main .news-img{
-        width: 110px;
+        width: 100%;
+        height: 85px;
     }
     .podcast-sidebar-main .title{
         font-size: 14px;  
@@ -129,16 +119,18 @@
     .podcast-sidebar-main .descr{ 
         font-size: 11px; 
         line-height: 13px;
-        margin-bottom: 4px;
+       
     }
     .podcast-sidebar-main .date{
         font-size: 11px;  
     }
     .podcast-sidebar-main .calender-icon{
-        font-size: 25px;
+        font-size: 20px;
         
     }
 }
 @media screen and (min-width : 1400px) {
-    
+    .podcast-sidebar-main .news-img{
+        height: 96px;
+    }
 }
