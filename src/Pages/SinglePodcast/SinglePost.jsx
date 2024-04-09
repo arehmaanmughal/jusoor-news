@@ -1,6 +1,7 @@
 import React from 'react'
 import Path from '../../Components/Path/Path'
 import SinglePodCastMain from './SinglePodCastMain/SinglePodCastMain'
+import Offersaction from '../../Components/Offersaction/offersaction'
 
 
 const SinglePost = () => {
@@ -13,6 +14,7 @@ const SinglePost = () => {
     <div>
       <Path route={path}/>
       <SinglePodCastMain/>
+      <Offersaction/>
     </div>
   )
 }

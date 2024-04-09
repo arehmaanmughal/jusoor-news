@@ -1,0 +1,80 @@
+.offer-saction{
+  padding: 2rem 0;
+}
+.offer-header{
+    text-align: right;
+    color: #4095C6;
+    font-weight: 900;
+    font-size: 30px;
+    border-right: 3px solid #4095c6;
+    padding-right:8px;
+}
+.offer-podcast .card{
+  background: #F5F6FA;
+  border-radius: 0;
+}
+.offer-podcast .title{
+   font-size: 18px;
+  font-weight: 900;
+  line-height: 16px;
+  text-align: right;
+  color: #1D1D1D;
+}
+.offer-podcast .descr{
+  color : #615959;
+  
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: right;
+
+  
+}
+.offer-podcast .date{
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color : #615959;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+}
+.offer-podcast .calender-icon{
+  font-size: 30px;
+  color : #615959;
+}
+  
+@media (max-width: 1280px) {
+ 
+ 
+  }
+
+
+@media (max-width: 1192px) {
+ 
+
+
+}
+@media (max-width: 992px) {
+
+
+
+}
+
+@media (max-width: 575.98px) {
+  .offer-header{
+    text-align: right;
+    color: #4095C6;
+    font-weight: 900;
+    font-size: 30px;
+    border-right: 3px solid #4095c6;
+    padding-right:8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+}
+

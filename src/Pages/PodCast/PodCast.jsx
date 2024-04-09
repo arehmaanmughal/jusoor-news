@@ -2,6 +2,7 @@ import React from "react";
 import Podcathero from "../../Components/Podcathero/Podcathero";
 import PodCasts from "./PodCasts/PodCasts";
 import Path from "../../Components/Path/Path";
+import Offersaction from "../../Components/Offersaction/offersaction";
 
 
 const PodCast = () => {
@@ -16,6 +17,7 @@ const PodCast = () => {
       <Podcathero/>
       <PodCasts/>
       <PodCasts/>
+      <Offersaction/>
     </div>
   );
 };
