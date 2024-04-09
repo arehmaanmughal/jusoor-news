@@ -34,7 +34,7 @@ const LowerNavbar = () => {
             <Link to={"/PrivacyPolicy/"}>سياسة</Link>
           </div>
           <div className="right-lower-nav d-flex align-items-center gap-2">
-            <Link className="d-none d-sm-flex">
+            <Link className="">
               <img src={logo}></img>
             </Link>
             <span className="toggle-btn d-lg-none" onClick={handleShow}>

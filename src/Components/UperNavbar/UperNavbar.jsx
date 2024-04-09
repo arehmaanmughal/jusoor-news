@@ -34,7 +34,7 @@ const UperNavbar = () => {
               <FaTiktok />
             </Link>
           </div>
-          <div className="right-uper-nav d-none d-lg-flex">
+          <div className="right-uper-nav">
             <div className="right-links">
               <Link>معلومات عنا</Link>
               <Link>اتصل بنا</Link>
